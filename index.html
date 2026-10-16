@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apex Clipper — ダウンロードとインストール</title>
+<link rel="icon" href="data:image/svg+xml,<svg viewBox='0 0 100 100' aria-hidden='true'><rect width='100' height='100' rx='20' fill='%23cf2b2b'/><path d='M50 22 L84 80 L16 80 Z' fill='%23f4efe6'/><path d='M50 54 L63 80 L37 80 Z' fill='%23cf2b2b'/></svg>">
+<style>
+:root{--bg:#f6f5f2;--ink:#1d1f21;--sub:#5d6268;--line:#dcdad4;--card:#fff;--red:#cf2b2b;--red-ink:#fff;--warn:#fff4e5;--warn-line:#eccf9c;--warn-ink:#6b4d16}
+@media (prefers-color-scheme:dark){:root{--bg:#141618;--ink:#ebedef;--sub:#a5abb1;--line:#2d3236;--card:#1c1f22;--warn:#2a2316;--warn-line:#4d3f22;--warn-ink:#ecd29b}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Yu Gothic UI","Hiragino Sans",Meiryo,system-ui,sans-serif;line-height:1.8}
+.wrap{max-width:880px;margin:0 auto;padding:0 16px 80px}
+.hero{display:flex;gap:18px;align-items:center;padding:40px 0 18px}
+.hero svg{width:72px;height:72px;flex:none}
+.hero h1{margin:0;font-size:clamp(28px,6vw,40px);letter-spacing:-.01em}
+.hero p{margin:4px 0 0;color:var(--sub)}
+.dl{margin:18px 0 8px;padding:22px;border:1px solid var(--line);border-radius:14px;background:var(--card)}
+.btn{display:inline-flex;align-items:center;gap:12px;background:var(--red);color:var(--red-ink);text-decoration:none;font-weight:700;font-size:20px;padding:16px 26px;border-radius:12px}
+.btn:hover{filter:brightness(1.08)}
+.btn small{font-weight:400;font-size:14px;opacity:.9}
+.meta{color:var(--sub);font-size:14px;margin:10px 0 0}
+.req{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;margin:14px 0 0}
+.req div{border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--card);font-size:14px}
+.req b{display:block;font-size:12px;color:var(--sub);font-weight:600}
+h2{margin:44px 0 6px;font-size:24px}
+h3{margin:30px 0 8px;font-size:18px;display:flex;gap:10px;align-items:center}
+h3 .n{display:inline-grid;place-items:center;min-width:30px;height:30px;padding:0 6px;border-radius:15px;background:var(--red);color:#fff;font-size:15px}
+figure{margin:12px 0 4px;padding:10px;border:1px solid var(--line);border-radius:10px;background:var(--card)}
+figure img{display:block;width:100%;height:auto;border-radius:6px}
+figcaption{padding:8px 2px 0;font-size:15px}
+.note{margin:14px 0;padding:12px 14px;border-radius:10px;background:var(--warn);border:1px solid var(--warn-line);color:var(--warn-ink);font-size:14.5px}
+a{color:inherit}
+footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);color:var(--sub);font-size:13px}
+@media (max-width:640px){.hero{padding-top:24px}.hero svg{width:56px;height:56px}.btn{font-size:18px;padding:14px 20px;width:100%;justify-content:center}}
+</style></head><body><div class="wrap">
+<header class="hero"><svg viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="20" fill="#cf2b2b"/><path d="M50 22 L84 80 L16 80 Z" fill="#f4efe6"/><path d="M50 54 L63 80 L37 80 Z" fill="#cf2b2b"/></svg><div><h1>Apex Clipper</h1><p>配信の録画から、キルの場面だけを自動で抜き出してつなげる Windows のアプリです（無料）。</p></div></header>
+<div class="dl"><a class="btn" id="dl" href="https://github.com/Qmq-pkuma/apex-clipper-dist-new/releases/latest/download/ApexClipper-Setup.exe">⬇ ダウンロード <small>Windows 10 / 11</small></a><p class="meta">最新版 <span id="ver"></span>　｜　<a id="all" href="https://github.com/Qmq-pkuma/apex-clipper-dist-new/releases/latest">ほかのファイル・更新の内容</a></p><div class="req"><div><b>OS</b>Windows 10 / 11</div><div><b>グラフィックボード（推奨）</b>NVIDIA GeForce RTX シリーズ（作者は RTX 4070 Ti で確認）</div><div><b>空き容量</b>50GB 以上（SSD がおすすめ）</div><div><b>ネット</b>最初に部品を数GB ダウンロード</div></div><p class="meta">⚠ AMD Radeon・内蔵 GPU・グラフィックボードの無い PC は<b>想定外</b>です。文字の読み取りを CPU で行うため、とても時間がかかります（一応は動きますが、実用は想定していません）。</p></div>
+<h2>インストールの手順（画像つき）</h2>
+<p>赤い枠を、番号の順に押していけば進めます。画面は Windows 11 の Edge です（Chrome の人は 2' を見てください）。</p>
+<h3><span class="n">1</span>上の「ダウンロード」ボタンを押す</h3>
+<p><b>ApexClipper-Setup.exe</b>（Apex Clipper のインストーラー）がダウンロードされます。下の画面に出るファイル名は版によって違います（例：apex-clipper-2.0.17-setup.exe）。</p>
+<h3><span class="n">2</span>「一般的にダウンロードされていません」と出たら（Edge）</h3>
+<div class="note">個人で作った（署名のない）アプリなので、ダウンロードや起動の時に Windows とブラウザが警告を出します。配布物は公開前に、新しい Windows で導入・起動・ウイルス対策の検査をしています。</div>
+<figure><img src="guide/02-flyout-dots.png" alt="" loading="lazy"><figcaption>個人で作った（署名のない）アプリなので、Edge がこの表示を出します。ダウンロードの一覧の項目にマウスを載せると出る <b>①「…」</b> を押します（右クリックでも同じメニューが出ます）。</figcaption></figure>
+<figure><img src="guide/03-menu-save.png" alt="" loading="lazy"><figcaption><b>①「保存」</b> を押します。</figcaption></figure>
+<figure><img src="guide/04-dialog-chevron.png" alt="" loading="lazy"><figcaption>確認の窓が出ます。<b>①「削除」の右の「∨」</b> を押します。<b>「削除」の文字そのものは押さないでください</b>（ファイルが消えます。消えたらもう一度ダウンロード）。</figcaption></figure>
+<figure><img src="guide/05-keep.png" alt="" loading="lazy"><figcaption><b>①「保持する」</b> を押します。</figcaption></figure>
+<figure><img src="guide/06-open-file.png" alt="" loading="lazy"><figcaption><b>①「ファイルを開く」</b> を押します。</figcaption></figure>
+<h3><span class="n">2&#x27;</span>Chrome の場合（ダウンロードの警告は出ず、開いた時に青い画面）</h3>
+<figure><img src="guide/07a-chrome-blue.png" alt="" loading="lazy"><figcaption>「Windows によって PC が保護されました」と出たら、<b>①「詳細情報」</b> を押します（「実行しない」は押さない）。</figcaption></figure>
+<figure><img src="guide/07b-chrome-run.png" alt="" loading="lazy"><figcaption>「発行元: 不明な発行元」と出ます（個人で作ったアプリのため）。<b>①「実行」</b> を押すと、次の 3 に進みます。</figcaption></figure>
+<h3><span class="n">3</span>Windows の確認で「はい」</h3>
+<figure><img src="guide/07-uac.png" alt="" loading="lazy"><figcaption>「発行元: 不明」は、個人で作ったアプリのためです。<b>①「はい」</b> を押します。</figcaption></figure>
+<h3><span class="n">4</span>セットアップを進める</h3>
+<figure><img src="guide/08-wizard-dest.png" alt="" loading="lazy"><figcaption>インストール先は変えなくて大丈夫です。<b>①「次へ」</b> を押します。次の2ページも「次へ」です。</figcaption></figure>
+<figure><img src="guide/09-wizard-ready.png" alt="" loading="lazy"><figcaption><b>①「インストール」</b> を押します。</figcaption></figure>
+<figure><img src="guide/10-installing.png" alt="" loading="lazy"><figcaption>「1/6」から「6/6」まで進みます。初回は部品のダウンロードで <b>15〜40分</b> かかることがあります。途中で失敗したら、同じ setup.exe をもう一度実行するとやり直せます。</figcaption></figure>
+<h3><span class="n">5</span>起動する</h3>
+<figure><img src="guide/11-finish.png" alt="" loading="lazy"><figcaption>「Apex Clipperを起動する」にチェックが入ったまま <b>①「完了」</b> を押すと起動します。デスクトップに「Apex Clipper」のショートカットができます。</figcaption></figure>
+<figure><img src="guide/12-initial-setup.png" alt="" loading="lazy"><figcaption>アプリの画面が出てから10〜20秒ほどで「はじめの設定」が出ます。最初は何も変えずに <b>①「この設定で利用開始」</b> で大丈夫です。使い方の案内は、アプリの右上の歯車 →「基本」→「案内を開く」にあります。</figcaption></figure>
+<h2>使い方</h2>
+<p>インストールの後は、アプリの右上の歯車 →「基本」→「案内を開く」で、使い方の案内を見られます。最初は YouTube の配信の URL を貼って「処理を開始」を押すだけです。</p>
+<footer>画面は、個人の設定やアカウントの無い試験用の Windows で撮ったものです。ソースは公開していません。</footer>
+</div><script>
+(function(){
+  var repo = (location.hostname.endsWith('github.io') && location.pathname.split('/')[1]) || 'apex-clipper-dist-new';
+  var base = 'https://github.com/Qmq-pkuma/' + repo;
+  document.getElementById('dl').href = base + '/releases/latest/download/ApexClipper-Setup.exe';
+  document.getElementById('all').href = base + '/releases/latest';
+  fetch('https://api.github.com/repos/Qmq-pkuma/' + repo + '/releases/latest').then(function(r){return r.ok ? r.json() : null}).then(function(j){
+    if (!j) return;
+    var a = (j.assets || []).filter(function(x){return x.name === 'ApexClipper-Setup.exe'})[0];
+    var d = j.published_at ? new Date(j.published_at).toLocaleDateString('ja-JP') : '';
+    document.getElementById('ver').textContent = j.tag_name + (a ? '・約' + (a.size / 1048576).toFixed(1) + 'MB' : '') + (d ? '・' + d + ' 公開' : '');
+  }).catch(function(){});
+})();
+</script></body></html>
